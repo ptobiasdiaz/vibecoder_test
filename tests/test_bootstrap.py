@@ -26,3 +26,6 @@ class SumarTest(unittest.TestCase):
 
     def test_suma_positivo_y_negativo(self):
         self.assertEqual(sumar(3, -2), 1)
+
+    def test_suma_enteros_grandes(self):
+        self.assertEqual(sumar(10**12, 10**12), 2 * 10**12)
